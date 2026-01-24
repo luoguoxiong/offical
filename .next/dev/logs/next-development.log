@@ -1,6 +1,7 @@
-[00:00:02.193] Server  LOG      ✓ Ready in 1908ms
-[00:00:10.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:10.795] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.730] Server  LOG      ✓ Ready in 438ms
+[00:00:04.595] Server  LOG      ○ Compiling / ...
+[00:00:06.828] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.000] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -20,7 +21,6 @@ It can also happen if the client has a browser extension installed which messes 
         <section>
         <section>
         <Video>
-        <section>
         <section>
         <section>
         <Home>
@@ -138,7 +138,17 @@ It can also happen if the client has a browser extension installed which messes 
                                   >
     ...
 
-[00:00:13.830] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.830] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.830] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.830] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.000] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.893] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.893] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.893] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:48.933] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:49.224] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:49.224] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:49.224] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:49.224] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:43.540] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:43.675] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:43.675] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:43.675] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:43.675] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
