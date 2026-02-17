@@ -1,19 +1,21 @@
+import Image from "next/image";
 import { Feature } from "@/types/feature";
-
+import card01 from "../../../public/images/card01.png"
 const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph } = feature;
+  const { title } = feature;
+
   return (
-    <div className="w-full">
-      <div className="wow fadeInUp" data-wow-delay=".15s">
-        <div className="bg-primary/10 text-primary mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md">
-          {icon}
-        </div>
-        <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
-          {title}
-        </h3>
-        <p className="text-body-color pr-[10px] text-base leading-relaxed font-medium">
-          {paragraph}
-        </p>
+    <div className="w-full max-w-[430px]">
+      <div className="relative w-full overflow-hidden rounded-xl shadow-lg aspect-[43/35] group">
+        <Image
+          src={card01}
+          alt={title}
+          fill
+          className="object-cover transition duration-500 group-hover:scale-105"
+        />
+        {/* <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">
+          <h3 className="text-white text-lg font-semibold">{title}</h3>
+        </div> */}
       </div>
     </div>
   );

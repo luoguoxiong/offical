@@ -1,154 +1,326 @@
-[00:00:00.730] Server  LOG      ✓ Ready in 438ms
-[00:00:04.595] Server  LOG      ○ Compiling / ...
-[00:00:06.828] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.000] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:02.183] Server  LOG      ✓ Ready in 1865ms
+[00:00:05.742] Server  LOG      ○ Compiling / ...
+[00:00:21.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.993] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.908] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.909] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:34.909] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:44.159] Server  LOG      ✓ Compiled in 78ms
+[00:04:54.730] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:55.099] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:55.099] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:55.099] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:55.099] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:15.976] Server  LOG      ✓ Compiled in 73ms
+[00:19:06.009] Server  LOG      ✓ Compiled in 71ms
+[00:21:29.074] Server  LOG      ✓ Compiled in 67ms
+[00:21:32.596] Server  LOG      ✓ Compiled in 59ms
+[00:23:38.380] Server  LOG      ✓ Compiled in 77ms
+[00:24:55.911] Server  LOG      ✓ Compiled in 71ms
+[00:25:18.826] Server  LOG      ✓ Compiled in 71ms
+[00:25:21.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:22.307] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:38.272] Server  LOG      ✓ Compiled in 69ms
+[00:25:47.389] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:47.389] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:47.389] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:47:38.944] Server  LOG      ✓ Compiled in 165ms
+[00:47:39.183] Browser ERROR   ./src/components/Hero/index.scss
+Error evaluating Node.js code
+To use Next.js' built-in Sass support, you first need to install `sass`.
+Run `npm i sass` or `yarn add sass` inside your workspace.
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Learn more: https://nextjs.org/docs/messages/install-sass
+[00:48:16.183] Browser ERROR   ./src/components/Hero/index.scss
+Error evaluating Node.js code
+To use Next.js' built-in Sass support, you first need to install `sass`.
+Run `npm i sass` or `yarn add sass` inside your workspace.
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+Learn more: https://nextjs.org/docs/messages/install-sass
+[00:48:33.182] Browser ERROR   ./src/components/Hero/index.scss
+Error evaluating Node.js code
+To use Next.js' built-in Sass support, you first need to install `sass`.
+Run `npm i sass` or `yarn add sass` inside your workspace.
 
-%s%s https://react.dev/link/hydration-mismatch 
+Learn more: https://nextjs.org/docs/messages/install-sass
+[00:48:49.852] Server  ERROR    ⨯ ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
 
-  ...
-    <SegmentViewNode type="page" pagePath="page.tsx">
-      <SegmentTrieNode>
-      <Home>
-        <ScrollUp>
-        <section>
-        <section>
-        <Video>
-        <section>
-        <section>
-        <Home>
-          <Contact>
-            <section id="contact" className="overflow-h...">
-              <div className="container">
-                <div className="-mx-4 flex...">
-                  <div>
-                  <div className="w-full px-...">
-                    <NewsLatterBox>
-                      <div className="shadow-thr...">
-                        <h3>
-                        <p>
-                        <div>
-                        <div>
-                          <span className="absolute t...">
-                            <svg width="57" height="65" viewBox="0 0 57 65" fill="none" xmlns="http://www...">
-                              <path>
-                              <defs>
-                                <linearGradient id="paint0_lin..." x1="-18.3187" y1="55.1044" x2="37.161" y2="15.3509" ...>
-                                  <stop
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0.62"
-                                  >
-                                  <stop
-                                    offset="1"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0"
-                                  >
-                          <span className="absolute b...">
-                            <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www...">
-                              <path>
-                              <defs>
-                                <linearGradient id="paint0_lin..." x1="39.1948" y1="38.335" x2="10.6982" y2="10.2511" ...>
-                                  <stop
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0.62"
-                                  >
-                                  <stop
-                                    offset="1"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0"
-                                  >
-                          <span className="absolute t...">
-                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www...">
-                              <path>
-                              <defs>
-                                <linearGradient id="paint0_lin..." x1="-0.571054" y1="-37.1717" x2="28.7937" y2="26.7564" ...>
-                                  <stop
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0.62"
-                                  >
-                                  <stop
-                                    offset="1"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0"
-                                  >
-                          <span className="absolute t...">
-                            <svg width="162" height="91" viewBox="0 0 162 91" fill="none" xmlns="http://www...">
-                              <g>
-                              <defs>
-                                <linearGradient id="paint0_lin..." x1="291.35" y1="12.1032" x2="179.211" y2="237.617" ...>
-                                  <stop
-                                    offset="0.328125"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                  >
-                                  <stop
-                                    offset="1"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0"
-                                  >
-                                <linearGradient id="paint1_lin..." x1="333.35" y1="-12.8968" x2="221.211" y2="212.617" ...>
-                                  <stop
-                                    offset="0.328125"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                  >
-                                  <stop
-                                    offset="1"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0"
-                                  >
-                                <linearGradient id="paint2_lin..." x1="294.35" y1="-3.89678" x2="182.211" y2="221.617" ...>
-                                  <stop
-                                    offset="0.328125"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                  >
-                                  <stop
-                                    offset="1"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0"
-                                  >
-                                <linearGradient id="paint3_lin..." x1="331.35" y1="-36.8968" x2="219.211" y2="188.617" ...>
-                                  <stop
-                                    offset="0.328125"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                  >
-                                  <stop
-                                    offset="1"
-+                                   stopColor="#4A6CF7"
--                                   stopColor="#fff"
-                                    stopOpacity="0"
-                                  >
-    ...
 
-[00:00:07.000] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:07.893] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:07.893] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:07.893] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:48.933] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:49.224] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:49.224] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:49.224] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:49.224] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:08:43.540] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:43.675] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:08:43.675] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:08:43.675] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:08:43.675] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:48:49.862] Server  ERROR    ⨯ ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:48:49.866] Server  ERROR    ⨯ ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:48:49.870] Server  ERROR    ⨯ ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:48:49.872] Server  ERROR    ⨯ ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:48:49.874] Server  ERROR    ⨯ ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:48:49.876] Server  ERROR    ⨯ ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:48:49.883] Server  LOG      ✓ Compiled in 153ms
+[00:48:50.182] Browser ERROR   ./src/components/Hero/index.tsx:2:1
+Module not found: Can't resolve './index.scss'
+  1 | import Link from "next/link";
+> 2 | import "./index.scss"
+    | ^^^^^^^^^^^^^^^^^^^^^
+  3 | const Hero = () => {
+  4 |   return (
+  5 |     <>
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:48:55.259] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:55.555] Browser WARN    Image with src "http://localhost:3000/images/logo/logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:49:33.234] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:49:33.234] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:49:33.911] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:50:17.622] Server  LOG      ✓ Compiled in 79ms
+[00:50:26.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:26.592] Browser WARN    Image with src "http://localhost:3000/images/logo/logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:51:58.339] Server  LOG      ✓ Compiled in 82ms
+[00:52:04.699] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:04.699] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:04.805] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:38.182] Browser ERROR   ./src/components/Hero/index.tsx:19:21
+Parsing ecmascript source code failed
+  17 |                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+  18 |                   We are a professional supply chain service company specializing in shoe care and footwear accessories, providing global clients with one-stop solutions from product development and customized manufacturing to final delivery. */}
+> 19 |                 </p>
+     |                     ^
+> 20 |                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+     | ^^^^^^^^^^^^^^^^^
+  21 |                   {/* <Link
+  22 |                     href="https://nextjstemplates.com/templates/saas-starter-startup"
+  23 |                     className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+
+Expected '</', got 'jsx text (
+                )'
+
+Import trace:
+  Server Component:
+    ./src/components/Hero/index.tsx
+    ./src/app/page.tsx
+[00:52:53.298] Server  LOG      ✓ Compiled in 70ms
+[00:53:10.607] Server  LOG      ✓ Compiled in 66ms
+[00:53:27.647] Server  LOG      ✓ Compiled in 75ms
+[00:54:06.905] Server  LOG      ✓ Compiled in 74ms
+[00:55:10.730] Server  LOG      ✓ Compiled in 73ms
+[00:55:14.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:14.833] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:55:26.954] Server  LOG      ✓ Compiled in 69ms
+[00:56:17.564] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:56:17.564] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:56:17.564] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:56:13.181] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:56:13.181] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:56:13.181] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:56:13.181] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:56:13.181] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:56:13.181] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:13.181] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:51.417] Server  LOG      ✓ Compiled in 94ms
+[01:57:40.187] Browser ERROR   ./src/components/Features/SingleFeature.tsx:3:13
+Parsing ecmascript source code failed
+  1 | import Image from "next/image";
+  2 | import { Feature } from "@/types/feature";
+> 3 | import from "../../../"
+    |             ^^^^^^^^^^^
+  4 | const SingleFeature = ({ feature }: any) => {
+  5 |   const { image, title } = feature;
+  6 |
+
+Expected ',', got 'string literal (../../../, "../../../")'
+
+Import trace:
+  Server Component:
+    ./src/components/Features/SingleFeature.tsx
+    ./src/components/Features/index.tsx
+    ./src/app/page.tsx
+[01:58:07.183] Browser ERROR   ./src/components/Features/SingleFeature.tsx:11:13
+Parsing ecmascript source code failed
+   9 |       
+  10 |       <Image
+> 11 |         :src="card01"
+     |             ^
+  12 |         alt={title}
+  13 |         fill
+  14 |         className="object-cover transition duration-500 group-hover:scale-105"
+
+Expected '</', got '='
+
+Import trace:
+  Server Component:
+    ./src/components/Features/SingleFeature.tsx
+    ./src/components/Features/index.tsx
+    ./src/app/page.tsx
+[01:58:15.208] Browser WARN    Image with src "/_next/static/media/card01.4e2c66de.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:58:44.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:58:45.110] Browser WARN    Image with src "/_next/static/media/card01.4e2c66de.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:58:45.110] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:58:45.110] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:58:45.110] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:58:45.110] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:01:43.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:01:43.870] Browser WARN    Image with src "/_next/static/media/card01.4e2c66de.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:01:43.870] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:01:43.870] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:01:43.870] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:01:44.772] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:02:20.182] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[02:02:20.182] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[02:02:20.182] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[02:02:20.182] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[02:02:20.182] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[02:02:20.182] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:02:20.182] Browser ERROR   Image is missing required "src" property: <img>
+[02:03:45.580] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:03:45.795] Browser WARN    Image with src "/_next/static/media/card01.4e2c66de.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:03:45.795] Browser WARN    Image with src "/images/video/image.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:03:45.795] Browser WARN    Image with src "/images/testimonials/auth-01.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:03:45.795] Browser WARN    Image with src "/images/testimonials/auth-02.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:03:45.795] Browser WARN    Image with src "/images/testimonials/auth-03.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

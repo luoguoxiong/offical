@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import "./index.css"
 const Hero = () => {
   return (
     <>
@@ -11,12 +11,12 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                {/* <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   A specialized, startup-friendly supply chain for shoe care and accessories.
                 </h1>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   We are a professional supply chain service company specializing in shoe care and footwear accessories, providing global clients with one-stop solutions from product development and customized manufacturing to final delivery.
-                </p>
+                </p> */}
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   {/* <Link
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
