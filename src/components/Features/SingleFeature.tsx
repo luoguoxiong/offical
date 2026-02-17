@@ -1,16 +1,14 @@
 import Image from "next/image";
 import { Feature } from "@/types/feature";
 import card01 from "../../../public/images/card01.png"
-const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { title } = feature;
-
+const SingleFeature = (item: {feature:string}) => {
   return (
     <div className="w-full max-w-[430px]">
       <div className="relative w-full overflow-hidden rounded-xl shadow-lg aspect-[43/35] group">
         <Image
-          src={card01}
-          alt={title}
+          src={item.feature}
           fill
+          alt="11"
           className="object-cover transition duration-500 group-hover:scale-105"
         />
         {/* <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">

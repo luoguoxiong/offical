@@ -133,3 +133,12 @@ layer(base);
     @apply inline-flex;
   }
 }
+
+
+.header-logo{
+  padding: 0;
+  img{
+    width: 140px;
+    height: 70px;
+  }
+}

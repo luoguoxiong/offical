@@ -20,22 +20,14 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
 
   return (
     <div className="w-full">
-      <div className="shadow-two hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark rounded-xs bg-white p-8 duration-300 lg:px-5 xl:px-8">
-        <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-        <p className="border-body-color/10 text-body-color mb-8 border-b pb-8 text-base leading-relaxed dark:border-white/10 dark:text-white">
-          “{content}
-        </p>
-        <div className="flex items-center">
-          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-            <Image src={image} alt={name} fill />
-          </div>
-          <div className="w-full">
-            <h3 className="text-dark mb-1 text-lg font-semibold lg:text-base xl:text-lg dark:text-white">
-              {name}
-            </h3>
-            <p className="text-body-color text-sm">{designation}</p>
-          </div>
-        </div>
+      <div className="shadow-two hover:shadow-one ">
+        {/* todo 发图片 */}
+          <Image
+            src={image} // 你的图片路径
+            alt="testimonial"
+            width={435}
+            height={295}
+          />
       </div>
     </div>
   );

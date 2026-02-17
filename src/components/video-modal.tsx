@@ -1,43 +1,47 @@
+"use client";
+
 import { createPortal } from "react-dom";
+import { useEffect, useRef } from "react";
 
 type PropsType = {
   isOpen: boolean;
   onClose: () => void;
-} & (
-    | {
-      channel: "youtube";
-      videoId: string;
-    }
-    | {
-      channel?: "custom";
-      src: string;
-    }
-  );
+  src: string;
+};
 
-export default function VideoModal({ isOpen, onClose, ...props }: PropsType) {
+export default function VideoModal({ isOpen, onClose, src }: PropsType) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // 关闭时暂停视频
+  useEffect(() => {
+    if (!isOpen && videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
-  let src = "";
-
-  if (props.channel === "youtube") {
-    src = `https://www.youtube.com/embed/${props.videoId}`;
-  } else {
-    src = props.src;
-  }
-
   return createPortal(
-    <div className="fixed inset-0 flex items-center justify-center bg-black/60">
-      <div className="relative w-full max-w-4xl bg-gray-900">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50">
+      <div className="relative w-full max-w-4xl bg-black rounded-lg overflow-hidden">
+        
         <button
           onClick={onClose}
-          className="absolute -top-2 -right-4 translate-x-full text-7xl leading-none text-white cursor-pointer"
+          className="absolute top-2 right-4 text-4xl text-white z-10"
         >
-          <span className="sr-only">Close modal</span>
           &times;
         </button>
-        <iframe width="100%" height="500" src={src} allowFullScreen />
+
+        <video
+          ref={videoRef}
+          src={src}
+          controls
+          autoPlay
+          className="w-full h-auto"
+        />
       </div>
     </div>,
-    document.body,
+    document.body
   );
 }

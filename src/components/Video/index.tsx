@@ -4,7 +4,6 @@ import VideoModal from "@/components/video-modal";
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
 export default function Video() {
   const [isOpen, setOpen] = useState(false);
 
@@ -12,12 +11,7 @@ export default function Video() {
     <>
       <section className="relative z-10 py-16 md:py-20 lg:py-28">
         <div className="container">
-          <SectionTitle
-            title="We are ready to help"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-            center
-            mb="80px"
-          />
+
         </div>
         <div className="relative overflow-hidden">
           <div className="-mx-4 flex flex-wrap">
@@ -25,7 +19,7 @@ export default function Video() {
               <div className="mx-auto max-w-[770px] overflow-hidden rounded-md">
                 <div className="relative aspect-77/40 items-center justify-center">
                   <Image
-                    src="/images/video/image.png"
+                    src="/video.jpg"
                     alt="video image"
                     className="object-cover"
                     fill
@@ -61,8 +55,7 @@ export default function Video() {
       <VideoModal
         isOpen={isOpen}
         onClose={() => setOpen(false)}
-        channel="youtube"
-        videoId="L61p2uyiMSo"
+        src="/clear.mp4"
       />
     </>
   );
