@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///Users/peroluo/work/offical/src/pages/api/send.ts"],"sourcesContent":["import type { NextApiRequest, NextApiResponse } from 'next'\n \ntype ResponseData = {\n  message: string\n}\n \nexport default function handler(\n  req: NextApiRequest,\n  res: NextApiResponse<ResponseData>\n) {\n  res.status(200).json({ message: 'Hello from Next.js!' })\n}"],"names":[],"mappings":";;;;AAMe,SAAS,QACtB,GAAmB,EACnB,GAAkC;IAElC,IAAI,MAAM,CAAC,KAAK,IAAI,CAAC;QAAE,SAAS;IAAsB;AACxD"}}]
+}

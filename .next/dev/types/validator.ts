@@ -3,7 +3,7 @@
 // This file validates that all pages and layouts export the correct types
 
 import type { AppRoutes, LayoutRoutes, ParamMap } from "./routes.js"
-import type { ResolvingMetadata, ResolvingViewport } from "next/types.js"
+import type { NextApiHandler, ResolvingMetadata, ResolvingViewport } from "next/types.js"
 
 type AppPageConfig<Route extends AppRoutes = AppRoutes> = {
   default: React.ComponentType<{ params: Promise<ParamMap[Route]> } & any> | ((props: { params: Promise<ParamMap[Route]> } & any) => React.ReactNode | Promise<React.ReactNode> | never | void | Promise<void>)
@@ -33,6 +33,19 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   ) => Promise<any> | any
   metadata?: any
   viewport?: any
+}
+
+type ApiRouteConfig = {
+  default: (req: any, res: any) => ReturnType<NextApiHandler>
+  config?: {
+    api?: {
+      bodyParser?: boolean | { sizeLimit?: string }
+      responseLimit?: string | number | boolean
+      externalResolver?: boolean
+    }
+    runtime?: 'edge' | 'experimental-edge' | 'nodejs' | string // necessary unless config is exported as const
+    maxDuration?: number
+  }
 }
 
 
@@ -121,7 +134,14 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 
 
 
-
+// Validate ../../../src/pages/api/send.ts
+{
+  type __IsExpected<Specific extends ApiRouteConfig> = Specific
+  const handler = {} as typeof import("../../../src/pages/api/send.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
 
 // Validate ../../../src/app/layout.tsx
 {

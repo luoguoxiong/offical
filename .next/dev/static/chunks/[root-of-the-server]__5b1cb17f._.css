@@ -152,6 +152,8 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-red-500: #fb2c36;
+    --color-blue-600: #155dfc;
     --color-gray-200: #e5e7eb;
     --color-gray-700: #374151;
     --color-black: #121723;
@@ -203,6 +205,13 @@
     --color-gray-dark: #1e232e;
     --color-gray-light: #f0f2f9;
     --drop-shadow-three: 0px 5px 15px #06080f0d;
+  }
+
+  @supports (color: lab(0% 0 0)) {
+    :root, :host {
+      --color-red-500: lab(55.4814% 75.0732 48.8528);
+      --color-blue-600: lab(44.0605% 29.0279 -86.0352);
+    }
   }
 }
 
@@ -706,6 +715,14 @@
 
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
+  }
+
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
 
   .mt-12 {
@@ -1300,6 +1317,10 @@
     }
   }
 
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
+
   .bg-body-color\/15 {
     background-color: #78829326;
   }
@@ -1761,6 +1782,10 @@
     color: var(--color-primary);
   }
 
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
+
   .text-white {
     color: var(--color-white);
   }
@@ -2063,6 +2088,10 @@
   .focus\:ring-2:focus {
     --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .disabled\:opacity-60:disabled {
+    opacity: .6;
   }
 
   @media (min-width: 575px) {
