@@ -1,9 +1,18 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+const menuData = [
+  { title: "Home", path: "/" },
+  { title: "Carbon Insole", path: "/carbon-fiber-insole" },
+  { title: "About", path: "/about" },
+  { title: "Contact", path: "/contact" },
+];
+
 const Header = () => {
+  const pathname = usePathname();
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -89,6 +98,23 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
+                  <ul className="block lg:flex lg:space-x-10">
+                    {menuData.map((item) => (
+                      <li key={item.path} className="relative">
+                        <Link
+                          href={item.path}
+                          onClick={() => setNavbarOpen(false)}
+                          className={`flex py-2 text-base font-medium lg:inline-flex lg:py-6 ${
+                            pathname === item.path
+                              ? "text-primary dark:text-white"
+                              : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                          }`}
+                        >
+                          {item.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0" />

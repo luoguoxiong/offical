@@ -5,8 +5,22 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const { email, name, content } = req.body;
-  console.log(email,name,content)
+  const { email, name, content, company, country, product, quantity } =
+    req.body;
+
+  if (!name || !email || !content) {
+    return res.status(400).json({ message: "Missing required fields" });
+  }
+
+  const detail = [
+    company && `company: ${company}`,
+    country && `country: ${country}`,
+    product && `product: ${product}`,
+    quantity && `quantity: ${quantity}`,
+  ]
+    .filter(Boolean)
+    .join("<br/>");
+
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.qq.com",
@@ -21,10 +35,13 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: "wslyfs2010@gmail.com",
-      subject: "收到一个新的客户邮件",
+      subject: product
+        ? `New enquiry - ${product}`
+        : "New enquiry from website",
       html: `
         <p>name: ${name}</p>
         <p>email: ${email}</p>
+        ${detail}
         <p>content: ${content}</p>
       `,
     });
