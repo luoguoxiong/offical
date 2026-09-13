@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Feature } from "@/types/feature";
-import card01 from "../../../public/images/card01.png"
+
 const SingleFeature = (item: any) => {
   return (
     <div className="w-full max-w-[430px]">
